@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my-postgres
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_DB: produtos-apirest
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
+
