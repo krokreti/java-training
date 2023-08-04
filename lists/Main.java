@@ -6,6 +6,7 @@ import java.util.Iterator;
 // Use an ArrayList for storing and accessing data, and LinkedList to manipulate data.
 public class Main {
     public static void main(String[] args) {
+        int[] myNumbers = {1, 2, 3};
         ArrayList<String> cars = new ArrayList<String>();
         ArrayList<Integer> numeros = new ArrayList<Integer>();
         cars.add("Volvo");
@@ -42,5 +43,13 @@ public class Main {
         System.out.println(hashSet.cars.contains("Mazda"));
         Double myDouble = 5.99;
         System.out.println(myDouble.toString());
+
+        try {
+            System.out.println(myNumbers[10]);
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            System.out.println("Try ... Catch is finished");
+        }
     }
 }
