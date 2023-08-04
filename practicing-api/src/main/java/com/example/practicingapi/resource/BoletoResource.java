@@ -33,8 +33,7 @@ public class BoletoResource {
                 entity,
                 Object.class
                 );
-        Object data = response.getBody();
-        return data;
+        return response.getBody();
     }
 
 }
